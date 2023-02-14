@@ -17,6 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "REACT_APP_API_URL=http://54.174.129.48:5000 react-scripts build",
+    "build-k8": "REACT_APP_API_URL=http://order-service:5000 react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Taken from https://github.com/nlatham1999/GoApp
+
 
 ## Available Scripts
 
@@ -72,7 +74,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-# Install yarn 
+### Install yarn 
 
 https://linuxhint.com/install_yarn_ubuntu/
+
+
+
+###  Passing  env variables example 
+"scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "start:qa": "env-cmd -f .env.qa react-scripts start",
+    "build:qa": "env-cmd -f .env.qa react-scripts build"
+  },
+
+
+ ###  Install nginx on ubuntu
+
+  https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04
 

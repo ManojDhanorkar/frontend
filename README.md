@@ -96,3 +96,5 @@ https://linuxhint.com/install_yarn_ubuntu/
 
   https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04
 
+
+  https://github.com/sclorg/nginx-container/tree/master/1.20

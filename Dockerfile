@@ -9,17 +9,8 @@ LABEL name="frontend" \
     summary="This service provides UI for adding orders" \
     description="This service provides UI for adding orders"
 
-COPY ./build /usr/share/nginx/html
+COPY ./build /opt/app-root/src
 
-#COPY nginx.conf /etc/nginx/nginx.conf
-
-USER 0
-
-RUN chown -R nginx:0  /var/log/nginx /var/run /etc/nginx /var/cache/ && \
-chmod 777  /var/log/nginx /var/run /etc/nginx /var/cache/
-
-EXPOSE 80
-
-USER nginx
+EXPOSE 8080
 
 CMD ["nginx", "-g", "daemon off;"]
